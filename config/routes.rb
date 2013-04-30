@@ -1,4 +1,10 @@
 ThreeJobs::Application.routes.draw do
+  get "job_pages/index"
+
+  get "job_pages/howworks"
+
+  get "job_pages/upload"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
