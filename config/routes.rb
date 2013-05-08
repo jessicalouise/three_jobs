@@ -1,29 +1,16 @@
 ThreeJobs::Application.routes.draw do
-  get "users/new"
 
-  get "users/create"
-
-  get "sessions/new"
-
-  get "sessions/create"
-
-  get "sessions/destroy"
 
   get "job_pages/index"
 
   get "job_pages/howworks"
 
   get "job_pages/upload"
-  get "log_in" => "sessions#new", :as => "log_in"
 
-get "sign_up" => "users#new", :as => "sign_up"
 
-get "log_out" => "sessions#destroy", :as => "log_out"
+root :to => "job_pages/index"
 
-root :to => "users#new"
 
-resources :users
-resources :sessions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
