@@ -1,0 +1,175 @@
+@import "bootstrap";
+
+/*PAGE FORMATTING*/
+
+html { 
+  background: url(large_copy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+ height: 100%;
+}
+
+#container {
+height: 100%;
+}
+
+#box {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+
+}
+/* HEADER */
+
+header { display: inline-block;
+  padding-top: 20px;
+  width: inherit;
+
+}
+
+h1 {
+	display: block;
+  float: left;
+  font-weight: 900;
+  margin:0;
+   font: 400 60px/1.2 'Nixie One', Georgia, serif;
+   /*text-shadow: 5px 5px 0px #eee, 7px 7px 0px #707070;;*/
+   text-shadow:#fff 0 1px 0, #000 0 -1px 0;
+   color:navy;
+   width: 60px;
+
+}
+
+/*NAVIGATION MENU*/
+
+.navig {
+  float:right;
+  width:auto;
+  overflow: hidden;
+  position: relative;
+   font: 200 20px/1.5 'Nixie One', Georgia, serif;
+   margin-top: 30px;
+ 
+}
+
+.navig ul {
+	list-style: none;
+  clear: left;
+  float: right;
+  margin: 50 0 0 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.navig ul li{
+	display: block;
+  float: right;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ right: 50%;
+}
+
+.navig ul li a{
+ text-transform: lowercase;
+  display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   /*background:#ddd;*/
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+
+.navig ul li a:active{
+text-shadow:#fff 0 1px 0, #000 0 -1px 0;
+   color: #000044;
+}
+
+.activepage {
+  text-shadow:#fff 0 1px 0, #000 0 -1px 0;
+   
+}
+
+
+
+.text {
+ width: 960px;
+  height: 400px;
+  /*float: left;*/
+  /*margin: 30px 0px 0px 76px;*/
+font-family: 'Alegreya', serif;
+font-size: 60px;
+   /*text-shadow:#fff 0 1px 0, #000 0 -1px 0;*/
+   color:black;
+  line-height: 60px;
+  text-indent: 30px;
+ 
+ letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  
+}
+
+.howworks{
+  width: 960px;
+  height: 400px;
+   color:black;
+  line-height: 60px;
+  text-indent: 30px;
+ font: 400 60px/1.2 'Nixie One', Georgia, serif;
+ letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto; 
+}
+
+span {
+  float: left;
+  color: navy;
+}
+
+#italic{
+  font-style: italic;
+   font: 400 95px/1.1 'Rancho', Georgia, serif;
+   color: navy;
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: black;
+}
+
+footer a {
+  color: black;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}

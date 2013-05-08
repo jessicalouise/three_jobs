@@ -1,14 +1,16 @@
 ThreeJobs::Application.routes.draw do
 
+ match 'index.html', to: "job_pages#index"
+  match '/', to: "job_pages#index"
 
-  get "job_pages/index"
+  match '/howworks', to: "job_pages#howworks"
 
-  get "job_pages/howworks"
+  match '/upload', to: "job_pages#upload"
 
-  get "job_pages/upload"
+  get 'job_pages/index'
 
 
-root :to => "job_pages/index"
+root :to => "job_pages#index"
 
 
 

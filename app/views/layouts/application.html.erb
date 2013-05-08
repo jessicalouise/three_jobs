@@ -7,12 +7,17 @@
 		 <title><%= full_title(yield(:title)) %></title>
 		
 		<!-- external CSS link -->
+	
 		<%= stylesheet_link_tag    "application", media: "all" %>	
 		<link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Ledger" rel="stylesheet" type="text/css">	
-<link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
-	
-<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+		<%= javascript_include_tag "application" %>
+   		<%= csrf_meta_tags %>
+    	<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   		 <![endif]-->
 	</head>
 
 <body>
@@ -26,16 +31,10 @@
 					<!-- active class will underline current page -->
 
 					<li class="menu-home active">
-				        <a href="index.html">Home</a>
-					</li>
-					<li class="menu-about">
-						<a href="aboutus.html">About Us</a>
-					</li>
-					<li class="menu-how">
-						<a href="howworks.html">How It Works</a>
+				        <li><%= link_to "Home",    root_path %></li>
 					</li>
 					<li class="menu-upload">
-						<a href="upload.html">Upload Your Resume</a>
+						<li><%= link_to "Upload Your Resume",    upload_path %></li>
 					</li>
 				</ul>
 			</nav>
@@ -44,4 +43,5 @@
 		 <%= yield %>
 		</div>
 	</div>
+	<%= render 'layouts/footer' %>
 </body>
