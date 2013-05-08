@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <title>ThreeJobs</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<%= yield %>
-
-</body>
-</html>
+		 <title><%= full_title(yield(:title)) %></title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">	
+		<link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Ledger" rel="stylesheet" type="text/css">	
+<link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+	
+<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+	</head>
+<div>

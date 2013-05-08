@@ -1,2 +1,40 @@
-<h1>JobPages#upload</h1>
-<p>Find me in app/views/job_pages/upload.html.erb</p>
+<% provide(:title, 'Upload') %>
+<body>
+		<div id="container">
+			<div id="box">
+			
+		<header class="pagehead">
+			<h1>threejobs.</h1>
+			<nav class="navig">
+				<ul>
+					<!-- active class will underline current page -->
+
+					<li class="menu-home">
+				        <a href="index.html">Home</a>
+					</li>
+					<li class="menu-about">
+						<a href="aboutus.html">About Us</a>
+					</li>
+					<li class="menu-how">
+						<a href="howworks.html">How It Works</a>
+					</li>
+					<li class="menu-upload active">
+						<a href="upload.html">Upload Your Resume</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="howworks">
+		<form>
+				<p>
+					Upload your resume as a txt file here:<br>
+					<input type="file" name="datafile" size="40">
+					</p>
+			</form> 
+
+
+		</div>
+		
+</div>
+	</body>
+</html>
