@@ -1,5 +1,7 @@
 ThreeJobs::Application.routes.draw do
 
+  get "users/new"
+
  match 'index.html', to: "job_pages#index"
   match '/', to: "job_pages#index"
 
