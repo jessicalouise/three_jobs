@@ -1,13 +1,14 @@
 ThreeJobs::Application.routes.draw do
 
-  get "users/new"
+  resources :users
+  match '/signup' => 'users#new'
 
- match 'index.html', to: "job_pages#index"
-  match '/', to: "job_pages#index"
+ match 'index.html' => "job_pages#index"
+  match '/' => "job_pages#index"
 
-  match '/howworks', to: "job_pages#howworks"
+  match '/howworks' => "job_pages#howworks"
 
-  match '/upload', to: "job_pages#upload"
+  match '/upload' => "job_pages#upload"
 
   get 'job_pages/index'
 
