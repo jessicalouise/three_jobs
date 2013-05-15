@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem "paperclip", "~> 3.0"
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'bootstrap-sass', '2.1'
 

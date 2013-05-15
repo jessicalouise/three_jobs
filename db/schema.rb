@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130508201706) do
+ActiveRecord::Schema.define(:version => 20130514200955) do
+
+  create_table "resumes", :force => true do |t|
+    t.text     "resumetext"
+    t.string   "jobtitle"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+    t.string   "resumeimage_file_name"
+    t.string   "resumeimage_content_type"
+    t.integer  "resumeimage_file_size"
+    t.datetime "resumeimage_updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
