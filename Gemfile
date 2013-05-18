@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem "will_paginate", "~> 3.0.4"
 gem "paperclip", "~> 3.0"
+gem "cocaine" 
+gem 'rails', '3.2.13'
+
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'bootstrap-sass', '2.1'
 
@@ -37,6 +40,7 @@ end
 
 group :production do
 	gem 'pg', '0.12.2'
+	gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
