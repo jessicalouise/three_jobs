@@ -2,7 +2,7 @@ ThreeJobs::Application.routes.draw do
 
   resources :users
   resources :resumes
-
+resources :sessions, only: [:new, :create, :destroy]
 
 
   match '/signup' => 'users#new'

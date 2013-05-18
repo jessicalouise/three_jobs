@@ -1,5 +1,13 @@
-<h1>New resume</h1>
+<% provide(:title, 'Upload') %>
 
-<%= render 'form' %>
+	<div class="text">
+		<div>
+		<form>
+				<p>
+					Add up to <div id="italic">three</div> job titles here:<br>
+					<input type="file" name="datafile" size="40">
+					</p>
+			</form> 
 
-<%= link_to 'Back', resume_path %>
+		</div>
+	</div>	
