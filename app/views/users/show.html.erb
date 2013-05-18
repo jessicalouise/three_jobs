@@ -1,5 +1,14 @@
 <% provide(:title, @user.name) %>
-<h1>
-	<%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
+<div class="text">
+		<div>
+			<%= @user.name %>
+			<br/>
+		<form>
+				<p>
+					Add up to <div id="italic">three</div> job titles here:<br>
+					<input type="file" name="datafile" size="40">
+					</p>
+			</form> 
+
+		</div>
+	</div>
