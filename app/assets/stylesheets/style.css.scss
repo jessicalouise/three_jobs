@@ -3,7 +3,7 @@
 /*PAGE FORMATTING*/
 
 html { 
-  background: url(large_copy.jpg) no-repeat center center fixed; 
+  background: url(large_copy.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,19 +11,16 @@ html {
 }
 
 body {
-background: url(large_copy.jpg) no-repeat center center fixed;
+background: url(large_copy.jpg); 
  height: 100%;
 }
 
 #container {
-
 height: 100%;
 }
 
 
-#footback{
-  background: url(blue2.jpg) no-repeat center center fixed;
-}
+
 #box {
   width: 960px;
   margin: 0 auto;

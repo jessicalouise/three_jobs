@@ -15,6 +15,8 @@ resources :sessions, only: [:new, :create, :destroy]
   match '/upload' => "job_pages#upload"
 
   get 'job_pages/index'
+  get 'users/new'
+  get 'sessions/new'
 
 
 root :to => "users#index"

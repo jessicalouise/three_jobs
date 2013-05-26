@@ -30,14 +30,14 @@
 				<ul>
 					<!-- active class will underline current page -->
 					<li class="menu-upload">
-					<%= link_to "Sign Up Now",    upload_path %>
+					<%= link_to "Register",    'users/new' %>
 					</li>
 					<li class="menu-home active">
 				        <%= link_to "Home",    root_path %>
 					</li>
                 <li><%= link_to "Profile", current_user %></li>
               
-            <li><%= link_to "Sign in", sessions_path %></li>
+            <li><%= link_to "Sign in", 'sessions/new' %></li>
             </ul>
 			</nav>
 		</header>
@@ -46,10 +46,10 @@
       <% end %>
 
 		 <%= yield %>
-		 </div>
-	</div>
+		
 		
 	<%= render 'layouts/footer' %>
 
-
+ </div>
+	</div>
 </body>
